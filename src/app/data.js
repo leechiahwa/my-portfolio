@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     title: "To be added",
     subtitle: "Python",
     description:
@@ -8,6 +9,7 @@ export const projects = [
     link: ""
   },
   {
+    id: 2,
     title: "To be added",
     subtitle: "Python",
     description:
@@ -28,6 +30,7 @@ export const skills = [
 
 export const testimonials = [
   {
+    id: 1,
     quote:
       "Melvin is a great developer. He has helped me with my project and he is very knowledgeable.",
     image: "https://randomuser.me/api/portraits/women/74.jpg",
@@ -35,6 +38,7 @@ export const testimonials = [
     company: "Google",
   },
   {
+    id: 2,
     quote:
       "Melvin is a great developer. He has helped me with my project and he is very knowledgeable.",
     image: "https://randomuser.me/api/portraits/women/76.jpg",
