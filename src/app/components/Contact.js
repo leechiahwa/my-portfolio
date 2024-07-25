@@ -69,7 +69,7 @@ export default function Contact() {
             Hire Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Let's work together! Send me a message and I'll get back to you as soon as possible.
+            Let&apos;s work together! Send me a message and I&apos;ll get back to you as soon as possible.
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">

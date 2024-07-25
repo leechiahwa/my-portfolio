@@ -9,7 +9,7 @@ export default function Projects() {
         <div className="flex flex-col w-full mb-20">
           <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Apps I've Built
+            Apps I&apos;ve Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
           Explore some of the innovative and impactful applications I’ve developed. Each project showcases my commitment to excellence, creativity, and technical expertise. From user-friendly interfaces to robust backend systems, these apps reflect my dedication to delivering high-quality software solutions.
