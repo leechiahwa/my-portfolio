@@ -33,7 +33,7 @@ export default function Contact() {
             width="100%"
             height="100%"
             title="map"
-            className="absolute inset-0"
+            className="absolute inset-0 hidden lg:block"
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/search?q=penang&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
@@ -50,7 +50,7 @@ export default function Contact() {
                 EMAIL
               </h2>
               <a className="text-indigo-400 leading-relaxed">
-                example@example.com
+                leechiahwa99@hotmail.com
               </a>
             </div>
           </div>

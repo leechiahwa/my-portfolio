@@ -12,7 +12,7 @@ export default function Projects() {
             Apps I&apos;ve Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Explore some of the innovative and impactful applications I’ve developed. Each project showcases my commitment to excellence, creativity, and technical expertise. From user-friendly interfaces to robust backend systems, these apps reflect my dedication to delivering high-quality software solutions.
+          Explore some of the innovative and impactful applications I&apos;ve developed. Each project showcases my commitment to excellence, creativity, and technical expertise. From user-friendly interfaces to robust backend systems, these apps reflect my dedication to delivering high-quality software solutions.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
