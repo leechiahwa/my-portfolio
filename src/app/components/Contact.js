@@ -1,5 +1,7 @@
 "use client"; // This is a client component 
 import React from "react";
+import swal from 'sweetalert';
+
 
 export default function Contact() {
 
@@ -16,12 +18,12 @@ export default function Contact() {
         body: JSON.stringify({ name, email, message }),
       });
       if (response.ok) {
-        alert('Message sent!');
+        swal("Sent!", "Your message has been sent successfully!", "success");
       } else {
-        alert('Failed to send message');
+        swal("Something went wrong!", "The message could not be sent. Please try again.", "error")
       }
     } catch (error) {
-      alert(error);
+      swal("Something went wrong!", "The message could not be sent. Please wait while it's fixed.", "error");
     }
   }
 
