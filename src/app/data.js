@@ -18,11 +18,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Django API",
-    subtitle: "Python, Django",
+    title: "My Web Portfolio",
+    subtitle: "Nextjs, Tailwind, Vercel",
     description:
-      "This is a Django-based API for a Google Keep-esque note-taking web application. The API allows users to create, read, update, and delete notes.",
-    image: "./django-logo.jpeg",
+      "This is my personal web portfolio.",
+    image: "./portfolio-website.png",
     link: "https://github.com/leechiahwa/notable_django"
   },
 ];
