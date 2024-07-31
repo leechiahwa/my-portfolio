@@ -23,7 +23,7 @@ export const projects = [
     description:
       "This is my personal web portfolio.",
     image: "./portfolio-website.png",
-    link: "https://github.com/leechiahwa/notable_django"
+    link: "https://github.com/leechiahwa/my-portfolio"
   },
 ];
 
