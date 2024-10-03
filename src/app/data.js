@@ -6,24 +6,25 @@ export const projects = [
     description:
       "I designed and developed this website for a company using Wordpress.",
     image: "./rpaplus-website.png",
-    link: "https://rpaplus.com.my"
+    link: "https://rpaplus.com.my",
   },
   {
     id: 2,
     title: "Flask API",
     subtitle: "Flask, mySQL, Vercel",
-    description: "This project is built using Flask, connected to a MySQL database, and the API is deployed on Vercel.",
+    description:
+      "This project is built using Flask, connected to a MySQL database, and the API is deployed on Vercel.",
     image: "./flask-logo.jpg",
-    link: ""
+    link: "",
   },
   {
     id: 3,
-    title: "My Web Portfolio",
-    subtitle: "Nextjs, Tailwind, Vercel",
+    title: "E-commerce Platform",
+    subtitle: "React, Django, Stripe",
     description:
-      "This is my personal web portfolio.",
-    image: "./portfolio-website.png",
-    link: "https://github.com/leechiahwa/my-portfolio"
+      "This is an e-commerce platform built using React, Django, and Stripe.",
+    image: "#",
+    link: "#",
   },
 ];
 
@@ -35,7 +36,7 @@ export const skills = [
   "CSS",
   "Tailwind",
   "Wordpress",
-  "Unity"
+  "Unity",
 ];
 
 export const testimonials = [
@@ -46,5 +47,5 @@ export const testimonials = [
     image: "./richie-wong-icon.jpeg",
     name: "Richie Wong",
     company: "Publicis Media",
-  }
+  },
 ];
