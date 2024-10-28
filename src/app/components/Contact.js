@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
         <div className="lg:w-1/3 md:w-1/2 bg-gray-900 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 className="text-white text-lg mb-1 font-medium title-font">
-            Contact Us
+            Contact Me
           </h2>
           <form onSubmit={handleSubmit} className="relative">
             <div className="relative mb-4">
