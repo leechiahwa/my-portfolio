@@ -1,5 +1,5 @@
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
-import React from 'react'
+import React from "react";
 import { projects } from "../data";
 
 export default function Projects() {
@@ -12,7 +12,12 @@ export default function Projects() {
             Things I&apos;ve Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Explore some of the innovative and impactful applications I&apos;ve developed personally and for work. Each project showcases my commitment to excellence, creativity, and technical expertise.
+            Explore some of the innovative and impactful applications I&apos;ve
+            developed personally and for work. Some projects are not included
+            due to confidentiality agreements, but I&apos;m always excited to
+            discuss my experience and the technologies I&apos;ve worked with.
+            Feel free to reach out if you want to learn more about my projects
+            or collaborate on something new!
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -20,7 +25,8 @@ export default function Projects() {
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-100 p-4">
+              className="sm:w-1/2 w-100 p-4"
+            >
               <div key={project.id} className="flex relative">
                 <img
                   alt="gallery"
@@ -42,5 +48,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

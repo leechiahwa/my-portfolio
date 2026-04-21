@@ -17,11 +17,11 @@ export default function About() {
             things.
           </h1>
           <p className="mb-8 leading-relaxed">
-            With a passion for creating innovative and efficient software
-            solutions, I thrive on turning ideas into reality. Whether it&apos;s
-            crafting seamless applications, optimizing systems, or developing
-            cutting-edge technology, I’m dedicated to delivering excellence and
-            value in every project.
+            Software Engineer with 3 years of backend experience spanning IoT
+            integration, Digital Twin systems, and AGV automation, currently
+            pursuing a Computer Science (AI) degree. Passionate about bridging
+            robust backend engineering with AI and machine learning to build
+            smarter, more capable software systems.
           </p>
           <div className="flex justify-center">
             <a

@@ -8,23 +8,32 @@ export const projects = [
     image: "./rpaplus-website.png",
     link: "https://rpaplus.com.my",
   },
-  {
-    id: 2,
-    title: "Flask API",
-    subtitle: "Flask, mySQL, Vercel",
-    description:
-      "This project is built using Flask, connected to a MySQL database, and the API is deployed on Vercel.",
-    image: "./flask-logo.jpg",
-    link: "",
-  },
+  // {
+  //   id: 2,
+  //   title: "Flask API",
+  //   subtitle: "Flask, mySQL, Vercel",
+  //   description:
+  //     "This project is built using Flask, connected to a MySQL database, and the API is deployed on Vercel.",
+  //   image: "./flask-logo.jpg",
+  //   link: "",
+  // },
+  // {
+  //   id: 3,
+  //   title: "E-commerce Platform",
+  //   subtitle: "React, Django, Stripe",
+  //   description:
+  //     "This is an e-commerce platform built using React, Django, and Stripe.",
+  //   image: "#",
+  //   link: "#",
+  // },
   {
     id: 3,
-    title: "E-commerce Platform",
-    subtitle: "React, Django, Stripe",
+    title: "WHOLE AI Health Companion",
+    subtitle: "React, Firebase, Gemini API",
     description:
-      "This is an e-commerce platform built using React, Django, and Stripe.",
-    image: "#",
-    link: "#",
+      "a responsive web application featuring a health metrics dashboard (BMI, BMR), a Gemini AI-powered chat interface personalised with user health context, and a mental health questionnaire with AI-generated summaries and advisory responses.",
+    image: "./whole.png",
+    link: "https://whole-companion.vercel.app/",
   },
 ];
 
@@ -32,8 +41,9 @@ export const skills = [
   "Python",
   "JavaScript",
   "React",
-  "HTML",
-  "CSS",
+  "MySQL",
+  "Flask",
+  "Node.js",
   "Tailwind",
   "Wordpress",
   "Unity",
