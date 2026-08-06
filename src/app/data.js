@@ -41,12 +41,12 @@ export const skills = [
 ];
 
 export const testimonials = [
-  {
-    id: 1,
-    quote:
-      "Melvin is in an expert in his own unique way. Paving through every obstacle and ensuring that his deliverables are top notched. A word for his professionalism, excellence.",
-    image: "./richie-wong-icon.jpeg",
-    name: "Richie Wong",
-    company: "Publicis Media",
-  },
+  // {
+  //   id: 1,
+  //   quote:
+  //     "Melvin is in an expert in his own unique way. Paving through every obstacle and ensuring that his deliverables are top notched. A word for his professionalism, excellence.",
+  //   image: "./richie-wong-icon.jpeg",
+  //   name: "Richie Wong",
+  //   company: "Publicis Media",
+  // },
 ];
