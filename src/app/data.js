@@ -1,40 +1,31 @@
 export const projects = [
-  {
-    id: 1,
-    title: "Wordpress site",
-    subtitle: "Wordpress",
-    description:
-      "I designed and developed this website for a company using Wordpress.",
-    image: "./rpaplus-website.png",
-    link: "https://rpaplus.com.my",
-  },
   // {
-  //   id: 2,
-  //   title: "Flask API",
-  //   subtitle: "Flask, mySQL, Vercel",
+  //   id: 1,
+  //   title: "Wordpress site",
+  //   subtitle: "Wordpress",
   //   description:
-  //     "This project is built using Flask, connected to a MySQL database, and the API is deployed on Vercel.",
-  //   image: "./flask-logo.jpg",
-  //   link: "",
-  // },
-  // {
-  //   id: 3,
-  //   title: "E-commerce Platform",
-  //   subtitle: "React, Django, Stripe",
-  //   description:
-  //     "This is an e-commerce platform built using React, Django, and Stripe.",
-  //   image: "#",
-  //   link: "#",
+  //     "I designed and developed this website for a company using Wordpress.",
+  //   image: "./rpaplus-website.png",
+  //   link: "https://rpaplus.com.my",
   // },
   {
-    id: 3,
+    id: 2,
     title: "WHOLE AI Health Companion",
     subtitle: "React, Firebase, Gemini API",
     description:
-      "a responsive web application featuring a health metrics dashboard (BMI, BMR), a Gemini AI-powered chat interface personalised with user health context, and a mental health questionnaire with AI-generated summaries and advisory responses.",
+      "a responsive web application featuring a health metrics dashboard (BMI, BMR), a AI-powered chat interface personalised with user health context, and a mental health questionnaire with AI-generated summaries and advisory responses.",
     image: "./whole.png",
     link: "https://whole-companion.vercel.app/",
   },
+  {
+    id: 3,
+    title: "Open Vision Website",
+    subtitle: "Wordpress, WooCommerce",
+    description:
+      "I developed this website for a company using Wordpress and WooCommerce.",
+    image: "./open-vision-logo.png",
+    link: "https://myopenvision.com/",
+  }
 ];
 
 export const skills = [
