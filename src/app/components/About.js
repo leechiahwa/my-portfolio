@@ -17,11 +17,11 @@ export default function About() {
             things.
           </h1>
           <p className="mb-8 leading-relaxed">
-            Software Engineer with 3 years of backend experience spanning IoT
-            integration, Digital Twin systems, and AGV automation, currently
-            pursuing a Computer Science (AI) degree. Passionate about bridging
-            robust backend engineering with AI and machine learning to build
-            smarter, more capable software systems.
+            Software Engineer with 3 years of backend experience across IoT
+            integration, Digital Twin systems, AGV automation, and ETL pipelines
+            for production data processing. Currently pursuing a Computer
+            Science (AI) degree, with a focus on bridging backend engineering
+            and machine learning to build smarter, data-driven systems.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4">
             <a

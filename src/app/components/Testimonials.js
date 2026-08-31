@@ -11,6 +11,9 @@ export default function Testimonials() {
           Client Testimonials
         </h1>
         <div className="flex flex-wrap m-4">
+          <div className="w-full text-center text-gray-400 text-lg mb-8">
+            To be updated
+          </div>
           {testimonials.map((testimonial) => (
             <div className="p-4 md:w-1/2 w-full" key={testimonial.id}>
               <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
