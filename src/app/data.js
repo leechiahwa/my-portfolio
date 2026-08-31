@@ -25,6 +25,15 @@ export const projects = [
       "I developed this website for a company using Wordpress and WooCommerce.",
     image: "./open-vision-logo.png",
     link: "https://myopenvision.com/",
+  },
+  {
+    id: 4,
+    title: "Lab on Hair Webpage",
+    subtitle: "Astro",
+    description:
+    "Waiting for client's approval to showcase.",
+    image: "./astro-logo.png",
+    link: "",
   }
 ];
 
