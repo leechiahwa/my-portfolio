@@ -1,52 +1,90 @@
-import { CodeBracketIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import { ArrowUpRight, Lock } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import SectionHeading from "./SectionHeading";
 import { projects } from "../data";
+import { cn } from "@/lib/utils";
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
-          <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Things I&apos;ve Built
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Explore some of the innovative and impactful applications I&apos;ve
-            developed personally and for work. Some projects are not included
-            due to confidentiality agreements, but I&apos;m always excited to
-            discuss my experience and the technologies I&apos;ve worked with.
-            Feel free to reach out if you want to learn more about my projects
-            or collaborate on something new!
-          </p>
-        </div>
-        <div className="flex flex-wrap -m-4">
+    <section id="projects" className="border-t border-border/60 bg-card/20 py-24">
+      <div className="container max-w-6xl">
+        <SectionHeading
+          eyebrow="Selected work"
+          title="Things I've Built"
+          description="Some of the applications I've developed personally and for work. Some projects aren't included due to confidentiality agreements, but I'm always happy to talk about my experience and the technologies I've worked with."
+        />
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4"
-            >
-              <div key={project.id} className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                </div>
-              </div>
-            </a>
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function ProjectCard({ project }) {
+  const tags = project.subtitle.split(",").map((t) => t.trim());
+  const hasLink = Boolean(project.link);
+
+  return (
+    <Card className="group flex flex-col overflow-hidden border-border/60 bg-card/60 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_0_40px_-12px_hsl(var(--primary)/0.4)]">
+      <div className="relative aspect-video overflow-hidden border-b border-border/60 bg-muted">
+        <img
+          src={project.image}
+          alt={project.title}
+          className={cn(
+            "h-full w-full transition-transform duration-500 group-hover:scale-105",
+            project.imageFit === "cover" ? "object-cover" : "object-contain p-6"
+          )}
+        />
+        {!hasLink && (
+          <Badge
+            variant="secondary"
+            className="absolute right-3 top-3 gap-1 bg-background/80 backdrop-blur"
+          >
+            <Lock className="h-3 w-3" /> Coming soon
+          </Badge>
+        )}
+      </div>
+      <CardHeader className="pb-3">
+        <CardTitle className="text-lg">{project.title}</CardTitle>
+        <CardDescription className="line-clamp-4 leading-relaxed first-letter:uppercase">
+          {project.description}
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="flex flex-wrap gap-1.5 pb-4">
+        {tags.map((tag) => (
+          <Badge key={tag} variant="outline" className="font-mono text-[11px] font-normal">
+            {tag}
+          </Badge>
+        ))}
+      </CardContent>
+      <CardFooter className="mt-auto">
+        {hasLink ? (
+          <Button variant="secondary" size="sm" className="w-full" asChild>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              Visit site
+              <ArrowUpRight className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </a>
+          </Button>
+        ) : (
+          <Button variant="secondary" size="sm" className="w-full" disabled>
+            Awaiting client approval
+          </Button>
+        )}
+      </CardFooter>
+    </Card>
   );
 }
